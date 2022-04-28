@@ -6,12 +6,54 @@ package com.myspace.solicitacao_ferias;
 
 public class Solicitacao implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public Solicitacao() {
-    }
+	private java.lang.String nome;
+	private java.lang.Integer id;
+	private java.time.LocalDate dataSaida;
+	private java.time.LocalDate dataRetorno;
 
+	public Solicitacao() {
+	}
 
+	public java.lang.String getNome() {
+		return this.nome;
+	}
 
+	public void setNome(java.lang.String nome) {
+		this.nome = nome;
+	}
+
+	public java.lang.Integer getId() {
+		return this.id;
+	}
+
+	public void setId(java.lang.Integer id) {
+		this.id = id;
+	}
+
+	public java.time.LocalDate getDataSaida() {
+		return this.dataSaida;
+	}
+
+	public void setDataSaida(java.time.LocalDate dataSaida) {
+		this.dataSaida = dataSaida;
+	}
+
+	public java.time.LocalDate getDataRetorno() {
+		return this.dataRetorno;
+	}
+
+	public void setDataRetorno(java.time.LocalDate dataRetorno) {
+		this.dataRetorno = dataRetorno;
+	}
+
+	public Solicitacao(java.lang.String nome, java.lang.Integer id,
+			java.time.LocalDate dataSaida, java.time.LocalDate dataRetorno) {
+		this.nome = nome;
+		this.id = id;
+		this.dataSaida = dataSaida;
+		this.dataRetorno = dataRetorno;
+	}
 
 }
