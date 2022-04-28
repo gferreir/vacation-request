@@ -6,12 +6,34 @@ package com.myspace.solicitacao_ferias;
 
 public class AprovacaoChefia implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public AprovacaoChefia() {
-    }
+	private java.lang.Boolean aprovado;
+	private java.lang.String comentario;
 
+	public AprovacaoChefia() {
+	}
 
+	public java.lang.Boolean getAprovado() {
+		return this.aprovado;
+	}
 
+	public void setAprovado(java.lang.Boolean aprovado) {
+		this.aprovado = aprovado;
+	}
+
+	public java.lang.String getComentario() {
+		return this.comentario;
+	}
+
+	public void setComentario(java.lang.String comentario) {
+		this.comentario = comentario;
+	}
+
+	public AprovacaoChefia(java.lang.Boolean aprovado,
+			java.lang.String comentario) {
+		this.aprovado = aprovado;
+		this.comentario = comentario;
+	}
 
 }
